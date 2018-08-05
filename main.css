@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #353535;
+    margin: 0;
+    font-family: 'Raleway';
+    line-height: 1.4;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar{
+    background: #4f4f4f;
+    padding: 2rem;
+    flex: 1 1 20%;
+    min-width: 300px;
+}
+
+.logo{
+    color:#f96855;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.logo span{
+    font-weight: 800;
+}
+
+.nav-item{
+    display: block;
+    text-decoration: none;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    color: #737373;
+}
+
+@media (max-width:1500px){
+    .nav-item{
+        display: inline-block;
+    }
+    
+}
+.active{
+    color: #c4c4c4;
+}
+
+/* Portfolio */
+
+.main-content{
+    flex: 1 1 80%;
+    min-height: 100vh;
+    padding: 8%;
+}
+
+.portfolio{
+    display: grid;
+    height: 100%;
+
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-gap: 10px;
+}
+
+.portfolio-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Styling Only */
+    background-size: cover;
+    color: #f96855;
+    background-position: top left;
+    background-color: #353535;
+    background-blend-mode: multiply;
+
+    transition: all ease-in-out 300ms;
+}
+
+.portfolio-item:hover{
+    background-color: transparent;
+    background-position: center;
+}
+
+.medium{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.large{
+    grid-row: span 3;
+    grid-column: span 3;
+}
+
+.small{
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.tall{
+    grid-row: span 3;
+    grid-column: span 2;
+}
+
+.wide{
+    grid-row: span 2;
+    grid-column: span 3;
+}
+
+.one{
+    background-image: url(https://source.unsplash.com/umZ-Mxz_nps/600x600);
+}
+
+.two{
+    background-image: url(https://source.unsplash.com/hZFXVjeS73A/600x600);
+}
+
+.three{
+    background-image: url(https://source.unsplash.com/WLUHO9A_xik/600x600);
+}
+
+.four{
+    background-image: url(https://source.unsplash.com/eT8vx7LLorY/600x600);
+}
+
+.five{
+    background-image: url(https://source.unsplash.com/HwpVgvhUmTg/600x600);
+}
+
+.six{
+    background-image: url(https://source.unsplash.com/2rAPafS-FnE/600x600);
+}
